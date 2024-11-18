@@ -1,0 +1,63 @@
+{
+    "Console": [
+    {
+      "name": "Entrance",
+      "tempValue": [
+        {
+          "preprocess": 0,
+          "masconfit": 1,
+          "visualization": 2
+        }
+      ],
+      "value": 2
+    }
+  ],
+  "Inputfilepath": [
+    {
+      "name": "Spherical harmonic",
+      "SH_path": "data/SH_coefficient"
+    },
+    {
+      "name": "Grid location",
+      "grid_location_path": "data\\Lon_Lat_vec.nc"
+    },
+    {
+      "name": "Regularization matrix",
+      "reg_matrix_path": "data\\RM_PM.nc"
+    }
+  ],
+  "Outputfilepath": [
+    {
+      "name": "Terrestrial water storage anomaly",
+      "mascon_path": "mascon"
+    },
+    {
+      "name": "Image",
+      "image_path": "images"
+    },
+    {
+      "name": "Gravity Models",
+      "gravity_path": "gravityModels"
+    }
+  ],
+  "Inputparameter": [
+    {
+      "name": "number of employed model",
+      "tempValue": [
+        {
+          "single": 0,
+          "all": 1
+        }
+      ],
+      "value": 0
+    },
+    {
+      "name": "target degree",
+      "value": 60
+    },
+    {
+      "name": "parameter number",
+      "value": 10242
+    } 
+  ]
+}

@@ -1,0 +1,13 @@
+clc;
+close;
+clear;
+t=zeros(10,10);
+t1=t(1,:);
+t2=t(:,2);
+t(1,:)=squeeze(ones(10,1)).*squeeze(ones(1,1,10));
+[lat,~]=GridSphere(10242);
+plm=plm_holmes(60,sin(deg2rad(lat)));
+plm0=plm(:,:,1);
+plm1=Legendre_PL(60,length(lat),deg2rad(lat));
+plm2=plm1(:,:,1);
+disp('程序运行完成');
